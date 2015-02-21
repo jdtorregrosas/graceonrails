@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main"/>
-		<title>Welcome to Grails</title>
+		<title>TIENDA VIRTUAL</title>
 		<style type="text/css" media="screen">
 			#status {
 				background-color: #eee;
@@ -82,33 +82,14 @@
 	</head>
 	<body>
 		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>A continuación se encuentra el link que dirige a la página de Login del taller número 1, Definición de la aplicación:
-
-La aplicación consistirá en una página principal donde el usuario podrá loguearse o dirigirse 
-
-a una página para crear su usuario en caso de no tener uno.
-
-La ventana de login debe dirigir a una en la que se indique un error de credenciales en el 
-
-caso dado en que el usuario ingrese incorrectamente su nombre o contraseña.
-
-Finalmente, en el caso de un login exitoso, el usuario ingresará a una página que contendrá 
-
-una lista de todos los usuarios que han sido creados.
-
-En el modelo se manejará una única tabla de usuario que contendrá: Nombre del usuario, 
-
-Correo electrónico (que será su ID para loguearse) y Contraseña.
-
-Se tendrá en cuenta si deciden usar hojas de estilo prediseñadas o que la página no sea 
-
-HTML plano, se debe respetar el modelo MVC que impone Grails.:</p>
+			<h1>BIENVENIDO  A  LA  TIENDA  VIRTUAL</h1>
+			<p>
+			</p>
 
 			<div id="controller-list" role="navigation">
-				<h2>Groovy workshop:</h2>
+				<h2></h2>
 				<ul>
-					<li class="controller"><g:link controller="user">Controlador de usuarios</g:link></li>
+					<li class="controller"><g:link controller="user">login a la tienda</g:link></li>
 				</ul>
 			</div>
 		</div>

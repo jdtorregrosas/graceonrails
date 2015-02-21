@@ -14,10 +14,10 @@
 			<div class="message">
 				${flash.message}
 			</div>
-		</g:if> 
+		</g:if>  
 		<g:if test="${session.user}">
 			<br/>
-			Login as : ${session.user}| <g:link action="logout">logout</g:link>
+			Login as : ${session.user}   account| <g:link action="logout">logout</g:link>
 		</g:if>	
 		<g:else>
 			
