@@ -58,6 +58,11 @@
 </tr>
 <tr>
 	<td>type</td>
+	<td>id=email</td>
+	<td>usuario@mail.com</td>
+</tr>
+<tr>
+	<td>type</td>
 	<td>id=password</td>
 	<td>usuario1</td>
 </tr>
@@ -69,7 +74,7 @@
 <tr>
 	<td>type</td>
 	<td>id=roll</td>
-	<td>Vendedor</td>
+	<td>Administrador</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -77,11 +82,20 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>css=ul.errors &gt; li</td>
+	<td>type</td>
+	<td>id=email</td>
+	<td>usuario@mail.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=create</td>
 	<td></td>
 </tr>
-
+<tr>
+	<td>assertText</td>
+	<td>css=ul.errors &gt; li</td>
+	<td>Property [usuario] of class [class prueba.User] with value [Usuario1] must be unique</td>
+</tr>
 </tbody></table>
 </body>
 </html>
