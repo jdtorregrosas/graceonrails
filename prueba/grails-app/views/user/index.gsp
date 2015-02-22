@@ -17,7 +17,7 @@
 		</g:if>  
 		<g:if test="${session.user}">
 			<br/>
-			Login as : ${session.user}   account| <g:link action="logout">logout</g:link>
+			Login as : ${session.user}   | Rol : ${session.roll}  |  <g:link action="logout">logout</g:link>
 		</g:if>	
 		<g:else>
 			
@@ -35,9 +35,7 @@
 					<label><br/>Usuario:</label><input type="text" name="usuario"/>
 					<label><br/>Contraseña:</label><input type="password" name="password"/>
 					<g:form url="[resource:userInstance, action:'login']" >
-							<fieldset class="buttons">
-							<g:submitButton name="login "class="login" value="Conectar"/>
-						</fieldset>
+							<g:actionSubmit controller="user" action="login" value="Conectar" />
 					</g:form>
 				</div>
 			</g:form>

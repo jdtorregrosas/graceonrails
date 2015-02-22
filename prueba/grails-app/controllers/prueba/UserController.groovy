@@ -42,13 +42,16 @@ class UserController {
 				params.password == User.findByUsuario(params.usuario).password){
 				flash.message= "coneccion exitosa"
 				session.user=params.usuario
+				session.roll=User.findByUsuario(params.usuario).roll
+				//print session.roll + "ROLL"
 				redirect(action: "listar")
-				print "entro!!"
+				//print "entro!!"
 			}else{
-			flash.message= "El correo o la contraseña son invalidos, por favor intente de nuevo"
+				flash.message= "El correo o el password son invalidos, por favor intente de nuevo"
+				redirect(action:"index")
 			}
 		}catch(Exception e){
-			flash.message= "El correo o la contraseña son invalidos, por favor intente de nuevo"
+			flash.message= "El correo o el password son invalidos, por favor intente de nuevo"
 			redirect(action:"index")
 		}
 	}
