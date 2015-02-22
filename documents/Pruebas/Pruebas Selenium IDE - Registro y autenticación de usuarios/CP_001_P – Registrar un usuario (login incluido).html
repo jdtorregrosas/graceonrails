@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://change-this-to-the-site-you-are-testing/" />
+<title>CP_001_P – Registrar un usuario (login incluido)</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CP_001_P – Registrar un usuario (login incluido)</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/prueba/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=login a la tienda</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Crear nuevo usuario</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nombre</td>
+	<td>Usuario1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nombre2</td>
+	<td>Prueba</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=apellido</td>
+	<td>Prueba2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=apellido2</td>
+	<td>Prueba3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cedula</td>
+	<td>123456789</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usuario</td>
+	<td>Usuario1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>usuario1@mail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>usuario1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmPassword</td>
+	<td>usuario1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=roll</td>
+	<td>Administrador</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.message</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
