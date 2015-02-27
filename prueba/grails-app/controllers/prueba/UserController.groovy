@@ -6,7 +6,7 @@ import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
-class UserController {
+class UserControler {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -35,23 +35,22 @@ class UserController {
 		//def p3 = User.findByEmail(params.username)
 		//print p3.usuario + "<---- p3"
 		print p2
-		print params.usuario+" <--- username"
 		
 		try{
 			if(params.usuario == User.findByUsuario(params.usuario).usuario &&
 				params.password == User.findByUsuario(params.usuario).password){
-				flash.message= "coneccion exitosa"
+				flash.message= "conexion exitosa"
 				session.user=params.usuario
-				session.roll=User.findByUsuario(params.usuario).roll
-				//print session.roll + "ROLL"
-				redirect(action: "listar")
+				print params.usuario+" <--- Conexion exitosa"
+				session.rol=User.findByUsuario(params.usuario).rol
+				//print session.rol + "rol"
 				//print "entro!!"
 			}else{
-				flash.message= "El correo o el password son invalidos, por favor intente de nuevo"
+				//flash.message= "El correo o el password son invalidos, por favor intente de nuevo"
 				redirect(action:"index")
 			}
 		}catch(Exception e){
-			flash.message= "El correo o el password son invalidos, por favor intente de nuevo"
+			flash.message= "El usuario no existe!"
 			redirect(action:"index")
 		}
 	}
@@ -62,6 +61,7 @@ class UserController {
 
     @Transactional
     def save(User userInstance) {
+		print "saving..."
         if (userInstance == null) {
             notFound()
             return

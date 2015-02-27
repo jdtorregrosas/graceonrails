@@ -4,7 +4,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'nombre', 'error')} required">
 	<label for="nombre">
-		<g:message code="user.nombre.label" default="Nombre" />
+		<g:message code="user.nombre.label" default="Primer Nombre" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="nombre" maxlength="15" required="" value="${userInstance?.nombre}"/>
@@ -13,7 +13,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'nombre2', 'error')} required">
 	<label for="nombre2">
-		<g:message code="user.nombre2.label" default="Nombre2" />
+		<g:message code="user.nombre2.label" default="Segundo Nombre" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="nombre2" maxlength="15" required="" value="${userInstance?.nombre2}"/>
@@ -22,7 +22,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'apellido', 'error')} required">
 	<label for="apellido">
-		<g:message code="user.apellido.label" default="Apellido" />
+		<g:message code="user.apellido.label" default="Primer Apellido" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="apellido" maxlength="15" required="" value="${userInstance?.apellido}"/>
@@ -31,10 +31,10 @@
 
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'apellido2', 'error')} required">
 	<label for="apellido2">
-		<g:message code="user.apellido2.label" default="Apellido2" />
+		<g:message code="user.apellido2.label" default="Segundo Apellido" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="apellido2" maxlength="15" required="" value="${userInstance?.apellido2}"/>
+	<g:textField name="apellido2" maxlength="15" value="${userInstance?.apellido2}"/>
 
 </div>
 
@@ -83,12 +83,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: userInstance, field: 'roll', 'error')} required">
-	<label for="roll">
-		<g:message code="user.roll.label" default="Roll" />
+<div class="fieldcontain ${hasErrors(bean: userInstance, field: 'Rol', 'error')} required">
+	<label for="Rol">
+		<g:message code="user.Rol.label" default="Rol" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="roll" required="" value="${userInstance?.roll}"/>
+	<g:textField name="Rol" required="" value="Vendedor" readonly="readonly"/>
 
 </div>
 
