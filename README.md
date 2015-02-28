@@ -8,4 +8,4 @@ Integrantes:
 	- Gerardo Torres (Analista) Codigo:2879361
 	- Grace Cabana (Tester) Codigo:2879481
 	- Julian Torregosa (Desarrollador) Codigo: 2879555
-	- Santiago Acosta (Desarrollador) Codigo: 2879XXX
+	- Santiago Acosta (Desarrollador) Codigo: 2879498
